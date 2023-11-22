@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SunShine Team</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-white bg-light">
+        <div class="navbar-brand">
+            <a class="navbar-brand" href="index.html"><img src="~/img/logo2.png" width="128" height="66" class="d-inline-block align-top" alt="additional title" /></a>
+        </div>
+        <div class="container">
+            @Html.ActionLink("SUNSHINE", "Index", new { area = "" }, new { @class = "navbar-brand" })
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a>@Html.ActionLink("Quản lý Hợp đồng", "Index", "FullContract", new { area = "" }, new { @class = "nav-link" })</a>
+                    </li>
+                    <li class="nav-item">
+                        <a>@Html.ActionLink("Thêm mới hợp đồng", "Create", "FullContract", new { area = "" }, new { @class = "nav-link" })</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+        <footer>
+            <p>&copy;Copyright by Team SunShine</p>
+        </footer>
+    </div>
+    
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

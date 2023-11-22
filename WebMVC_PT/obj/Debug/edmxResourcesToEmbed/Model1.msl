@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QUANLYBDS_TEAM3ModelStoreContainer" CdmEntityContainer="QUANLYBDS_TEAM3Entities">
+    <EntitySetMapping Name="Full_Contract">
+      <EntityTypeMapping TypeName="QUANLYBDS_TEAM3Model.Full_Contract">
+        <MappingFragment StoreEntitySet="Full_Contract">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Full_Contract_Code" ColumnName="Full_Contract_Code" />
+          <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+          <ScalarProperty Name="Year_Of_Birth" ColumnName="Year_Of_Birth" />
+          <ScalarProperty Name="SSN" ColumnName="SSN" />
+          <ScalarProperty Name="Customer_Address" ColumnName="Customer_Address" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Property_ID" ColumnName="Property_ID" />
+          <ScalarProperty Name="Date_Of_Contract" ColumnName="Date_Of_Contract" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Deposit" ColumnName="Deposit" />
+          <ScalarProperty Name="Remain" ColumnName="Remain" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

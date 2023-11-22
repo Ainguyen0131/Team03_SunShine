@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QUANLYBDS_TEAM3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Full_Contract">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Full_Contract_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Year_Of_Birth" Type="Int32" />
+    <Property Name="SSN" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Customer_Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Property_ID" Type="Int32" Nullable="false" />
+    <Property Name="Date_Of_Contract" Type="DateTime" Precision="0" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Deposit" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Remain" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Status" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="QUANLYBDS_TEAM3Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Full_Contract" EntityType="Self.Full_Contract" />
+  </EntityContainer>
+</Schema>
